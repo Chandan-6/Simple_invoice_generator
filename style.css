@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Dosis:wght@500&family=Overpass:wght@300&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none; 
+}
+
+/* Firefox */
+/* input[type=number] {
+    -moz-appearance: textfield;
+} */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.navbar{
+    margin-top: 10px;
+    overflow: hidden;
+    position: sticky;
+    filter: drop-shadow(0 0 10px #060606);
+}
+
+#nav_container1{
+    gap: 60px;
+}
+
+#nav_ul{
+    gap: 50px;
+}
+
+
+#nav_text{
+    color: rgb(0, 0, 0);
+    font-size:large;
+}
+
+#nav_text:hover{
+    width:max-content;
+    background-color: #06060600;
+    border-radius: 18px;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 3px rgba(32, 32, 32, 0.947),
+    -1px -1px 3px rgba(32, 32, 32, 0.947);
+    color: #000000;
+    transform: scale(1.1);
+}
+
+
+#mail_logo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 5px 10px #ffffff);
+}
+
+
+/* ------------ End of nav bar ----------------*/
+
+.main_container{
+    margin-top: 20px;
+}
+
+#CustomerName_inputBox,
+#CustomerContact_inputBox,
+#InvoiceNo_inputBox{
+    width: 380px;
+}
+
+.customer_name_contact{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+#InvoiceNo_inputBox{
+    width: 250px;
+    margin: 12px auto 12px;
+    
+}
+
+/* ------------ End of customer details ----------------*/
+
+.add_product_details{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.coolinput {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 240px;
+}
+
+#product_dis_input{
+    width: 550px;
+}
+
+#qty{
+    width: 90px;
+}
+
+#amt{
+    width: 150px;
+}
+  
+.coolinput label.text {
+    font-size: 0.75rem;
+    color: #818CF8;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: #e8e8e8;
+    border-radius: 12px;
+    width: fit-content;
+    
+}
+  
+.coolinput input[type=text].input,
+.coolinput input[type=number].input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px #818CF8 solid;
+    border-radius: 5px;
+    background: #ffffff;
+}
+  
+.coolinput input[type=text].input:focus,
+.coolinput input[type=number].input:focus{
+    outline: none;
+}
+
+/* add button */
+
+.Add_button {
+    margin-top: 20px;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+    /* border-radius: 12px; */
+}
+  
+.Add_button, .button__icon, .button__text {
+    transition: all 0.3s;
+}
+  
+.Add_button .button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+}
+  
+.Add_button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.Add_button .svg {
+    width: 30px;
+    stroke: #fff;
+}
+  
+.Add_button:hover {
+    background: #34974d;
+    border-radius: 12px;
+}
+  
+.Add_button:hover .button__text {
+    color: transparent;
+}
+  
+.Add_button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+    border-radius: 12px;
+}
+  
+.Add_button:active .button__icon {
+    background-color: #2e8644;
+}
+  
+.Add_button:active {
+    border: 1px solid #2e8644;
+}
+
+
+/* ------------ End of add items ----------------*/
+
+.Shipping_input {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 35px auto 1em;
+    max-width: 230px;
+    position: relative;
+    /* background-color: white;
+    border-radius: 16px; */
+
+  }
+  
+  .Shipping_input input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .Shipping_input label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 11px;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(123, 123, 123);
+  }
+  
+  .Shipping_input :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: #e8e8e86e;
+    color: #000000;
+    border-radius: 16px;
+  }
+  
+  .Shipping_input :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
+
+
+
+/* ------------ End of shipping charges input ----------------*/
+
+
+
+.Invoice_container{
+    width: 595px;
+    height: 933px;
+    background-color: #fff;
+    margin: 35px auto 35px;
+    /* display: none; */
+}
+
+.blobs,
+.owner_details{
+    width: 50%;
+}
+
+.BlobNo_1{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+}
+
+.brand_name{
+    font-family: 'Cormorant Garamond', serif;
+    position: absolute;
+    left: 11px;
+    top: 0px;
+    color: black;
+    font-size: 26px;
+}
+
+.BlobNo_2{
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    left: 53px;
+}
+
+.invoice_title{
+    position: absolute;
+    font-family: 'Bad Script', cursive;
+    font-size: 60px;
+    left: 75px;
+    top: 61px;
+    color: #545454;
+    text-shadow: 1px 1px 2px #ffcdcd;
+}
+
+.BrandLogo{
+    width: 70px;
+    height: 70px;
+}
+
+.owner_details{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 15px 15px 0 0;
+    
+}
+
+
+.owner_details ul{
+    text-align: right;
+    justify-content: end;
+    list-style: none;
+}
+
+.owner_details ul li{
+    width: 330px;
+    font-size: 14px
+}
+
+/* ------------ End of Head 1 container ----------------*/
+
+.Invoice_container_head_2{
+    display: flex;
+    justify-content: center;
+
+}
+
+.Box_left,
+.Box_right{
+    /* background-color: #FFF6F6; */
+    background-color: rgb(255,246,246);
+    /* background-image: url(/InvoiceMedia/color_1.png); */
+    text-align: center;
+    width: 253px;
+    height: 81px;
+    margin: 8px 21px 8px;
+    padding: 9px;
+}
+
+
+/* ------------ End of Invoice Head - 2 ----------------*/
+
+.table_headings{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* width: 93%; */
+    height: 50px;
+    margin: 11px -2px 15px;
+    padding: 0px;
+    background: #FFE9E9;
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
+    align-content: center;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.table_headings span{
+    font-size: 15px;
+    word-wrap: break-word;
+    /* padding: 12px; */
+}
+
+/* ------------ End of Table head----------------*/
+
+.table_box{
+    min-height: 282px;
+}
+
+
+.table_items_list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 12px auto 12px;
+    align-items: center;
+    text-align: center;
+}
+
+.table_items_list span{
+    font-size: 12px;
+    margin: 2px 0px 2px;
+}
+
+#product_des{
+    max-width: 150px;
+}
+
+/* ------------ End of Table list----------------*/
+
+.bottom_total_container{
+    width: 93%;
+    background: #FFE9E9;
+    height: 50px;
+    margin: 16px auto 1px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: right;
+}
+
+.bottom_total_container p{
+    margin-right: 20px;
+    margin-bottom: -2px;
+    font-family: 'Alike', serif;
+}
+
+.bottom_total_container p span{
+    margin-left: 24px;
+}
+
+/* ------------ End of total & shipping container----------------*/
+
+.grand_total_box{
+    width: 93%;
+    text-align: right;
+}
+
+.grand_total_box p{
+    margin-right: -1px;
+    margin-bottom: -2px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 19px;
+}
+
+.grand_total_box p span{
+    margin-left: 24px;   
+}
+
+/* ------------ End of grand container----------------*/
+
+.payment_container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 17px;
+}
+
+.qrcode_img{
+    width: 80px;
+    height: 80px;
+}
+
+.gpay_logo{
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.gpay_number{
+    font-size: 11px;
+    margin-bottom: 0px;
+}
+
+.payment_container h6{
+    margin-bottom: 0px;
+}
+
+.payment_container ol{
+    font-size: 12px;
+}
+
+
+.invoice_footer_container{
+    display: flex;
+}
+
+
+.payment_container,
+.blob_footer_container{
+    width: 50%;
+}
+
+
+.TQ_txt{
+    position: absolute;
+    font-family: 'Bad Script', cursive;
+    font-size: 53px;
+    color: #545454;
+    text-shadow: 1px 1px 2px #ffcdcd;
+    margin-top: 10px;
+}
+
+
+.Fotter_BlobNo_1{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    transform: rotate(-179.76deg);
+    transform-origin: 0 0;
+    top: 97%;
+    left: 100%;
+}
+
+.Fotter_BlobNo_2{
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    transform: rotate(-179.76deg); 
+    transform-origin: 0 0;
+    left: 86%;
+    top: 98%;
+}
+
+/* ------------ End of bottom footer container----------------*/
+
+
+/* .Invoice_container{
+    display: none;
+} */
+
+
+
+.Download_button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 12px 2rem;
+    margin: 25px auto 50px;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    display: grid;
+  }
+  
+  .Download_button:hover::before {
+    transform: scaleX(1);
+  } 
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .Download_button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }

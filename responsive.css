@@ -1,0 +1,15 @@
+@media only screen and (max-width: 710px) {
+    #CustomerName_inputBox,
+    #CustomerContact_inputBox{
+        width: 280px;
+    }
+
+    .add_product_details{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Shipping_input {
+        max-width: 188px;
+    }
+}
